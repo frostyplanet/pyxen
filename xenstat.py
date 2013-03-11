@@ -10,7 +10,7 @@ try:
     if 'XEN_PYTHON_LIB' in dir(conf): 
         sys.path.append (conf.XEN_PYTHON_LIB) # for xen 4.1 in ubuntu
 except ImportError:
-    #sys.path.append ("/usr/lib/xen-default/lib/python/")
+    sys.path.append ("/usr/lib/xen-default/lib/python/")
     pass
 
 import xen.xm.main
