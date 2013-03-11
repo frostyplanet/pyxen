@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 import sys
-import _env
 import os
 import re
 from command import call_cmd, search_path, Command, CommandException

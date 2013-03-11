@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding:utf-8
 
-import _env
 import sys
 import os
 import time
@@ -74,7 +73,7 @@ if __name__ == '__main__':
         xs.run (dom_names)
         time.sleep (1)
         dom0 = xs.dom_dict.get ('Domain-0')
-        print dom0['cpu_avg']
-        print xs.total_cpu
+        print "dom0_avg", dom0['cpu_avg']
+        print "total", xs.total_cpu
 
 # vim: tabstop=4 expandtab shiftwidth=4 softtabstop=4 :
